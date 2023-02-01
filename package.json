@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "jparticles": "^3.4.0"
+    "particles.js": "^2.0.0"
   }
 }
