@@ -4,37 +4,13 @@
 
 <body>
     <script src="https://kaolporter.github.io/node_modules/jparticles/browser/jparticles.all.js"></script>
-    <script>new JParticles.Line('#demo', {
-        // opacity: 0 ~ 1
-        opacity: 1,
-        // 'red' or ['red', 'blue', 'green']
-        color: ['red'],
-        // auto resize to fit the screen
-        resize: true,
-        // number of lines
-        num: 6,
-        // max width
-        maxWidth: 2,
-        // min width
-        minWidth: 1,
-        // max speed
-        maxSpeed: 3,
-        // min speed
-        minSpeed: 1,
-        // max degree
-        maxDegree: 90,
-        // min degree
-        minDegree: 80,
-        // create new lines on click
-        createOnClick: true,
-        // number lines to create on click
-        numberOfCreations: 3,
-        // remove lines when going out of the canvas
-        removeOnOverflow: true,
-        overflowCompensation: 20, // in px
-        // number of lines to reserve
-        reservedLines: 6,
-    })</script>
+    <script>
+        bind('#demo', function(){
+            return new Particleground.particle( '#demo', {
+                num: 100
+            });
+        });
+    </script>
     <div id="demo" style="width: 100%; height: 100%;"></div>
 </body>
 
