@@ -15,7 +15,7 @@ Load particles.js and configure the particles:
 
 **app.js**
 ```javascript
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load(@dom-id, @path-json, @callback (optional)); 
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles-js config loaded');
 });
