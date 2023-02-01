@@ -10,13 +10,13 @@
 
     <script src="https://kaolporter.github.io/node_modules/jparticles/browser/jparticles.all.js" type="text/javascript"></script>
     <script>        
-        bind('#demo', function () {
+        function build() {
             try{
             return new JParticles.particle('#demo', {num: 100});
             }catch(error){
                 throw new Error(error);
             }
-        });
+        }
     </script>
 
     
